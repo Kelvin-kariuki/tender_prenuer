@@ -10,7 +10,7 @@ export default function SearchAppBar({images}) {
         <a href="/home">Home</a>
         <a href="/form">Form</a>
         <a href="/">Log out</a>
-        
+    {/* Adding Nav bar */}
       </div>
       <div
         className={`nav-toggle ${isOpen && "open"}`}
