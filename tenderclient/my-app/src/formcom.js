@@ -44,12 +44,12 @@ function CompanyForm({textStyle, button}) {
   }
   
   return (
-    <div >
-        <h2>Add New Tender</h2>
-       <TextField id="outlined-basic" label="Name" variant="outlined" className={textStyle} onChange={(e) => setName(e.target.value)} value={name} />
+    <div className='Form1'>
+        {/* <h2>Add New Tender</h2> */}
+       <TextField id="outlined-basic" label="Company Name" variant="outlined" className={textStyle} onChange={(e) => setName(e.target.value)} value={name} />
        <TextField id="outlined-basic" label="Email" variant="outlined" className={textStyle} onChange={(e) => setEmail(e.target.value)} value={email} />
        <TextField id="outlined-basic" label="Tender_ID" variant="outlined" className={textStyle} onChange={(e) => setTender_id(e.target.value)} value={tender_id}  />
-        <Button variant="contained" color="secondary" className={button} onClick={handleSubmit}> Company Post </Button>
+        <Button variant="contained" color="" className={button} onClick={handleSubmit}> Company Post </Button>
 
     </div>
   )

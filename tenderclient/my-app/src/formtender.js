@@ -46,13 +46,13 @@ function TenderForm({textStyle, button,SetTender ,tender}) {
   }
   
   return (
-    <div >
-        <h2>Add New Tender</h2>
+    <div className='Form1'>
+        <h2 className='fh'>Add New Tender</h2>
        <TextField id="outlined-basic" label="Name" variant="outlined" className={textStyle} onChange={(e) => setName(e.target.value)} value={name} />
        <TextField id="outlined-basic" label="Serial" variant="outlined" className={textStyle} onChange={(e) => setSerial(e.target.value)} value={serial} />
        <TextField id="outlined-basic" label="Description" variant="outlined" className={textStyle} onChange={(e) => setDescription(e.target.value)} value={description}  />
         <TextField id="outlined-basic" label="Cost" variant="outlined" className={textStyle} onChange={(e) => setCost(e.target.value)} value={cost} />
-        <Button variant="contained" color="secondary" className={button} onClick={handleSubmit}> Tender POst </Button>
+        <Button variant="contained" color="" className={button} onClick={handleSubmit}> Tender Post </Button>
         <CompanyForm/>
     </div>
   )
