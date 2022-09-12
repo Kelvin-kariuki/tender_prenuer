@@ -29,6 +29,7 @@ class ApplicationController < Sinatra::Base
     )
     t.to_json
   end
+  # Setting up delete API
   delete '/tenders/:id' do
     t = Tender.find(params[:id])
     t.destroy
