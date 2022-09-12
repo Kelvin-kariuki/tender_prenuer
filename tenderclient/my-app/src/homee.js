@@ -30,6 +30,7 @@ function homee({tender, setTender}) {
             <div key={user.id}>
             Company To Apply: &nbsp;{user.name}<br></br>
            Apply to: &nbsp;{user.email}<br></br>
+           {/* Setting up an event listener */}
            <button onClick= {(e) => handleDelete(tenders.id)}>Delete</button>
            </div>
            ))}
