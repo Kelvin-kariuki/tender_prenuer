@@ -29,6 +29,22 @@ class ApplicationController < Sinatra::Base
     )
     t.to_json
   end
+  delete '/tenders/:id' do
+    t = Tender.find(params[:id])
+    t.destroy
+    t.to_json
+  end
+  patch '/tender/:id' do
+    t= Tender.find(params[:id]);
+    t.update(
+      name: params[:name]
+      # serial: params[:serial],
+      # description: params[:description],
+      # cost: params[:cost]
+    )
+    t.destroy
+    t.to_json
+  end
 
   # get "/user" do
   #   t= User.all

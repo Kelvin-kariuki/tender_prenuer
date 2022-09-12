@@ -1,6 +1,19 @@
 import React from 'react'
 
-function homee({tender}) {
+
+function homee({tender, setTender}) {
+
+  function handleDelete(id) {
+    fetch(`http://localhost:9292/tenders/${id}`, {
+      method: 'DELETE',
+    })
+      .then((r) => r.json())
+      .then(() => {
+        const deleteTender = tender.filter((tenders) => tenders.id !== id)
+        setTender(deleteTender)
+      })
+  }
+
 
   return (
     <div> <div className="row">
@@ -16,6 +29,7 @@ function homee({tender}) {
             <div key={user.id}>
             Company To Apply: &nbsp;{user.name}<br></br>
            Apply to: &nbsp;{user.email}<br></br>
+           <button onClick= {(e) => handleDelete(tenders.id)}>Delete</button>
            </div>
            ))}
           
@@ -24,6 +38,7 @@ function homee({tender}) {
        
       </div>))}
       </div>
+      
       </div></div>
   ) 
 }
