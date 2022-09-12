@@ -18,6 +18,7 @@ To access this project on your local files, you can clone it using these steps
 6. To run JSON server DB on its own port use ["json-server --watch db.json --port 3004"]
 7. To start the web service use ["npm start"]
 8. Backend path "http://localhost:9292/{Route}"
+9. To start the database "Rake server"
 ## Known Bugs
 The landing page is fairly new. No know bugs reported yet.
 ## Technologies Used
