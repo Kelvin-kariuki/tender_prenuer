@@ -35,6 +35,7 @@ class ApplicationController < Sinatra::Base
     t.destroy
     t.to_json
   end
+  # Setting up patch for company
   patch '/tender/:id' do
     t= Tender.find(params[:id]);
     t.update(
