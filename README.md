@@ -12,7 +12,7 @@ The project will be created with a backend database for deployement and updation
 To access this project on your local files, you can clone it using these steps
 1. Open your terminal
 2. Use this command to clone `$ git clone
-3.(..https://github.com/Kelvin-kariuki..)
+3.(..https://github.com/Kelvin-kariuki/tender_prenuer..)
 4. This will clone the repositoty into your local folder
 5. Link to the live page ""
 6. To run JSON server DB on its own port use ["json-server --watch db.json --port 3004"]
