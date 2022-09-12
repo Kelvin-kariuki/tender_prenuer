@@ -7,7 +7,7 @@ import Checkbox from '@material-ui/core/Checkbox';
 
 function Login({loggedin,logSet}){
 
-    const username="patrick" 
+    const username="test" 
     const password="1234"
     
     const [usernamestate ,setUsername]=useState("")
