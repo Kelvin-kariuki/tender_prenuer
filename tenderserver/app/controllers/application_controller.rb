@@ -9,7 +9,7 @@ class ApplicationController < Sinatra::Base
       } 
     })
   end
-
+# Setting up post for company
   post '/company' do
     co = Company.create(
       name: params[:name],
