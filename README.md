@@ -23,7 +23,7 @@ To access this project on your local files, you can clone it using these steps
 ## Known Bugs
 The landing page is fairly new. No know bugs reported yet.
 ## Technologies Used
-Technology used is CSS,HTML and React
+Technology used is CSS,HTML,React, Active Record and Ruby
 
 ## Support and contact details
 Feel free to leave a comment.
