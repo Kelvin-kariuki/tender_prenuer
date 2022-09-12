@@ -19,6 +19,7 @@ To access this project on your local files, you can clone it using these steps
 7. To start the web service use ["npm start"]
 8. Backend path "http://localhost:9292/{Route}"
 9. To start the database "Rake server"
+10. Localhost for frontend "http://localhost:3000"
 ## Known Bugs
 The landing page is fairly new. No know bugs reported yet.
 ## Technologies Used
