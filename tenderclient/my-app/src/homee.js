@@ -4,6 +4,7 @@ import React from 'react'
 function homee({tender, setTender}) {
 
   function handleDelete(id) {
+    // Server API PATH
     fetch(`http://localhost:9292/tenders/${id}`, {
       method: 'DELETE',
     })
