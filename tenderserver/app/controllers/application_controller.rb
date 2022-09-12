@@ -19,7 +19,7 @@ class ApplicationController < Sinatra::Base
     )
     co.to_json
   end
-    
+    # Setting up post for tenders
   post '/tenders' do
     t= Tender.create(
       name: params[:name],
